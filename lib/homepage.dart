@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'drawer.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -7,14 +8,14 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter learning app'),
+        title: const Text('Upstox'),
+        backgroundColor: const Color.fromARGB(255, 81, 58, 107),
+        shadowColor: const Color.fromARGB(255, 87, 87, 87),
       ),
       body: Center(
         child: Text('Fazil app: try $tryNum'),
       ),
-      drawer: const Drawer(
-        backgroundColor: Color.fromARGB(255, 199, 209, 218),
-      ),
+      drawer: const DrawerPage(),
     );
   }
 }
